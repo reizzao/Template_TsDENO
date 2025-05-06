@@ -18,7 +18,7 @@
     },
     "lint": {
       "include": ["src/"],
-      "exclude": ["src/testdata/", "data/fixtures/**/*.ts"],
+      "exclude": ["zzz/**/*.ts", "data/fixtures/**/*.ts"],
       "rules": {
         "tags": ["recommended"],
         "include": [],
