@@ -1,6 +1,7 @@
 {
   "imports": {
     "@/": "./src/",
+    "serverTest": "https://deno.land/x/expect@v0.2.10/expect.ts",
     "serverRest": "npm:express@4.18.2",
     "@externals": "./src/Externals/index.ts",
     "@example": "./src/Modules/ExampleModule/index.ts"

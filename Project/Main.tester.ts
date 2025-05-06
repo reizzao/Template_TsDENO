@@ -2,4 +2,9 @@
 
 import { App } from "./Main.ts"
 
-console.log(App.Example)
+function tester_() {
+  console.log(App.Example)
+}
+tester_();
+
+export default 1;
