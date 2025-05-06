@@ -1,0 +1,29 @@
+{
+  "deno.importMap": "./import_map.json",
+  "tasks": {
+    "run": "deno run --watch -A --import-map import_map.json src/main.ts",
+    "test": "deno test -A --watch --import-map import_map.json",
+    "server_gql": "deno run -A src/main.ts",
+    "server_rest": "deno run --watch -A --import-map import_map.json src/server.rest.express.ts"
+  },
+  "fmt": {
+    "option": {
+      "useTabs": true,
+      "lineWidth": 120,
+      "indentWidth": 2,
+      "semiColons": false,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    },
+    "lint": {
+      "include": ["src/"],
+      "exclude": ["src/testdata/", "data/fixtures/**/*.ts"],
+      "rules": {
+        "tags": ["recommended"],
+        "include": [],
+        "exclude": ["no-unused-vars", "no-explicit-any"]
+      }
+    }
+  }
+}
+// "no-unused-vars", "no-explicit-any"

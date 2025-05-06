@@ -1,0 +1,16 @@
+{
+  "deno.config": "./deno.json",
+  "deno.enable": true,
+  "deno.unstable": true,
+  "deno.importMap": "./import_map.json",
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": false
+  },
+  /*  VARIAVEIS DE AMBIENTE PARA EXTENSAO CLIENT_HTTP #PORT_SERVER */
+  "rest-client.environmentVariables": {
+    "Local Env": {
+      "host": "http://localhost:8000"
+    }
+  }
+}
+

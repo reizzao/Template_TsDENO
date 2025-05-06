@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@/": "./src/",
+    "serverRest": "npm:express@4.18.2",
+    "@externals": "./src/Externals/index.ts",
+    "@example": "./src/Modules/ExampleModule/index.ts"
+  }
+}

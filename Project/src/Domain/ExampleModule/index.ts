@@ -1,0 +1,1 @@
+export const ExampleModuleText = "Hello I' ExampleModule 1 ."
