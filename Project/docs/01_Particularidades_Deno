@@ -1,0 +1,6 @@
+
+- Não instale o Deno via outros meios - instale sempre via o caminho oficial - tutorial: https://docs.deno.com/runtime/getting_started/installation/
+- Atualizar Deno : $ `deno upgrade`
+- Ao instalar ele vai criar uma pasta no ususario /.deno
+- - Tem que instalr a extensao do Deno linguagem no vscode
+- para rodar um arquivo : deno <NOME_ARQUIVO.extensao>
