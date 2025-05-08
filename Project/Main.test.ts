@@ -1,7 +1,7 @@
 // deno-lint-ignore-file no-explicit-any no-unused-vars
 
 // import { expect } from "@serverTest";
-import { expect } from "https://deno.land/x/expect@v0.2.10/expect.ts";
+import { expect } from "@dep_deno";
 
 import { App } from "./Main.ts";
 
@@ -17,7 +17,7 @@ const dubleConsoleObject: any = { nome: "rei", numero: 10.05 }
 // Lib_RzTS.Console("Hellow 1234 ")
 
 Deno.test({
-  name: "[ Console ] deve retornar os valores do Objeto no console,
+  name: "[ Console ] deve retornar os valores do Objeto no console",
   only: false,
   fn() {
     expect(sut.Example).toEqual(undefined);

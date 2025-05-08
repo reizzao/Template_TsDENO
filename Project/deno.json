@@ -8,8 +8,10 @@
     "server_rest": "deno run --watch -A --import-map import_map.json src/server.rest.express.ts"
   },
   "imports": {
-    "serverTest": "https://deno.land/x/expect@v0.2.10/expect.ts",
-    "serverRest": "npm:express@4.18.2",
+    "@/": "./",
+    "@dep_locals": "./deps.local.app.ts",
+    "@dep_externals": "./deps.externals.ts",
+    "@dep_deno": "./deps.deno.ts"
   },
   "vendor": true,
 
@@ -31,6 +33,6 @@
         "exclude": ["no-unused-vars", "no-explicit-any"]
       }
     }
-  }
+  }//
 }
 // "no-unused-vars", "no-explicit-any"

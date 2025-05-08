@@ -1,14 +1,14 @@
 // import { ExampleLib01 } from "@externals"
 // import { ExampleModuleText } from "@example"
 
-import { ExampleModuleText } from "./src/Domain/ExampleModule/index.ts"
+import { ExampleModule01 } from "./src/Domain/ExampleModule01/index.ts"
 
 interface IApp {
   Example: string
 }
 
 const App: IApp = {
-  Example: ExampleModuleText
+  Example: ExampleModule01
 }
 
 export { App }

@@ -1,7 +1,3 @@
 {
-  "imports": {
-    "@/": "./src/",
-    "@externals": "./src/Externals/index.ts",
-    "@example": "./src/Modules/ExampleModule/index.ts"
-  }
+  "imports": {}
 }
