@@ -1,7 +1,4 @@
-// import { ExampleLib01 } from "@externals"
-// import { ExampleModuleText } from "@example"
-
-import { ExampleModule01 } from "./src/Domain/ExampleModule01/index.ts"
+import { ExampleModule01 } from "@dep_example01"
 
 interface IApp {
   Example: string

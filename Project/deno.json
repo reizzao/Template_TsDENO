@@ -9,7 +9,8 @@
   },
   "imports": {
     "@/": "./",
-    "@dep_locals": "./deps.local.app.ts",
+    "@dep_example01": "./src/Domain/ExampleModule01/index.ts",
+    "@dep_example02": "./src/Domain/ExampleModule02/index.ts",
     "@dep_externals": "./deps.externals.ts",
     "@dep_deno": "./deps.deno.ts"
   },

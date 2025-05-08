@@ -4,3 +4,4 @@
 - Ao instalar ele vai criar uma pasta no usuario /.deno
 - - Tem que instalr a extensao do Deno linguagem no vscode
 - para rodar um arquivo : deno <NOME_ARQUIVO.extensao>
+- obs: arquivo deps de modulos locais da erro - quando no mesmo esta ja usd uma importacao local tbm, melhor dos mundos é deixar as importacoes de deps locais no arquivo deno.json

@@ -1,8 +1,6 @@
 // deno-lint-ignore-file no-explicit-any no-unused-vars
 
-// import { expect } from "@serverTest";
 import { expect } from "@dep_deno";
-
 import { App } from "./Main.ts";
 
 const sut = App;

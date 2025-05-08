@@ -1,4 +1,4 @@
-import { ExampleModule02 } from "@dep_locals"
+import { ExampleModule02 } from "@dep_example02"
 
 const useModule02 = ExampleModule02
 
