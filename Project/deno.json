@@ -7,13 +7,6 @@
     "server_gql": "deno run -A src/main.ts",
     "server_rest": "deno run --watch -A --import-map import_map.json src/server.rest.express.ts"
   },
-  "imports": {
-    "@/": "./",
-    "@dep_example01": "./src/Domain/ExampleModule01/index.ts",
-    "@dep_example02": "./src/Domain/ExampleModule02/index.ts",
-    "@dep_externals": "./deps.externals.ts",
-    "@dep_deno": "./deps.deno.ts"
-  },
   "vendor": true,
 
   "fmt": {

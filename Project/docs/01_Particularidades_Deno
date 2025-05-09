@@ -2,6 +2,15 @@
 - Não instale o Deno via outros meios - instale sempre via o caminho oficial - tutorial: https://docs.deno.com/runtime/getting_started/installation/
 - Atualizar Deno : $ `deno upgrade`
 - Ao instalar ele vai criar uma pasta no usuario /.deno
-- - Tem que instalr a extensao do Deno linguagem no vscode
+- - Tem que instalar a extensao do Deno linguagem no vscode
 - para rodar um arquivo : deno <NOME_ARQUIVO.extensao>
 - obs: arquivo deps de modulos locais da erro - quando no mesmo esta ja usd uma importacao local tbm, melhor dos mundos é deixar as importacoes de deps locais no arquivo deno.json
+-
+- rodar arquivo
+  simples: deno <ENDERECO/ARQUIVO.extensao>
+
+  comRecursos: deno run --watch -A --import-map import_map.json <ENDERECO/ARQUIVO.extensao> // Apartir do momento que uso o import_map que é um recurso diferente json , então pra executar uso este comando com recurso.
+
+  observacoes: para a importacao do import_map.json funcionar somente aqui posso ter a chave imports:{} e nao posso te-la também no deno .json, e pra eexecutar esse aquivo uso o modo com recurso que tem a flag: --import-map import_map.json
+
+  Executar_de_arquivo_configuracao: deno task <chave desejada>, exemplo: deno task run
