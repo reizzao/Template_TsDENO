@@ -6,7 +6,6 @@ interface Example1PropsModel {
 }
 
 class Example1 {
-  // public readonly Props: Example1PropsModel
 
   constructor(private readonly Props: Example1PropsModel,) {
     this.Props.ID = Props.ID || "todo: makeID() - chamar aqui"
