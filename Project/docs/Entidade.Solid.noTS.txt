@@ -1,0 +1,2 @@
+
+1. Modelo : criar o modelo de objeto da entidade, quais campos ela vai ter
