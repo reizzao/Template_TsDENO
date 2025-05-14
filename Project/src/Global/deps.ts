@@ -4,3 +4,6 @@
 
 // Dep Deno
 export * from "https://deno.land/x/expect@v0.2.10/expect.ts";
+
+// Dep tests
+// export { assertEquals } from "https://deno.land/std@v0.32.0/testing/asserts.ts";
