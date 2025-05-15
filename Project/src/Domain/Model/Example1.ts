@@ -1,16 +1,21 @@
+import type { ICreateExample1RequestDTO } from "../UseCases/CreateExample1/CreateExample1DTO.ts";
 
-interface Example1PropsModel {
+interface IExample1 {
   ID: string
-  Nome: string
-  Sobrenome: string
+  Props: ICreateExample1RequestDTO
 }
 
 class Example1 {
+  public readonly ID: string
 
-  constructor(private readonly Props: Example1PropsModel,) {
-    this.Props.ID = Props.ID || "todo: makeID() - chamar aqui"
+  constructor(public readonly Props: ICreateExample1RequestDTO, ID?: string) {
+    // Object.assign(this, Props)
+
+    // OBS: preencher campos que nao virao do request aqui :
+    this.ID = ID || "todo: makeID() - chamar aqui"
   }
 
 }
 
 export { Example1 }
+export type { IExample1 }
