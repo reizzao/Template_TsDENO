@@ -4,7 +4,7 @@
   - Estrutura_dos_Campos : criar o modelo de objeto da entidade, quais campos ela vai ter
 
 2. Repositorio: pasta: /repositories/
- - Contrato de metodos que o caso de uso podera usar na base de dados, exemplo: [ findByEmail, CRUD, ]
+ - Contrato de metodos que a entidade/objeto vai disponibilizar para usarem nela e as respostas viram de uma base de dados escolhida, exemplo: [ findByEmail, CRUD, ]
 
 3. Caso_de_Uso : pasta: UseCases/AcaoEntidade exemplo: UseCases/CreateUser
 - nesta pasta vai todos arquivos referente a funcionalidade a ser criada, exemplo: [ AcaoEntyUseCase, AcaoEntyDTO, AcaoEntyUseCaseTest, AcaoEntyController, ]
