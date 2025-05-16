@@ -2,25 +2,34 @@
 # Dominio
 1. Modelo : pasta: model ou entities/
   - Estrutura_dos_Campos : criar o modelo de objeto da entidade, quais campos ela vai ter
+( estrutura, ex: modeladora/classe, devolve objeto )
 
 2. Repositorio: pasta: /repositories/
  - Contrato de metodos que a entidade/objeto vai disponibilizar para usarem nela e as respostas viram de uma base de dados escolhida, exemplo: [ findByEmail, CRUD, ]
+( interface, type, devolve contrato )
+
 
 3. Caso_de_Uso : pasta: UseCases/AcaoEntidade exemplo: UseCases/CreateUser
 - nesta pasta vai todos arquivos referente a funcionalidade a ser criada, exemplo: [ AcaoEntyUseCase, AcaoEntyDTO, AcaoEntyUseCaseTest, AcaoEntyController, ]
 - convencao: package by feature (pacote por funcionalidade)
- - Caso de uso vai receber uma dependencia_de_contrato e executar um metodo onde usara o contrato de DTO
+ - Caso de uso vai receber dependencia_de_contrato ex: contrato de repositorio e executar um metodo onde receberá entrada de dados de um contrato de DTO
+( estrutura : objeto/funcao, devolve objeto )
+
 
   - DTO : é o contrato de formato de dados por parametro que sera usado entre camadas.
+( contrato )
 
 4. Implementacao_Repositorios , pasta: Repositories/Implementations
   Missao: implementar os contrato de repositorio , ex: [ MemoryEntyRepository, JsonEntyRepository, BdEntyRepository ]
+( estrutura : class/implementadoras, devolve funcoes )
 
 5. Index_Factory : pasta: UseCases/AcaoUseCase
   - Missao: instanciar as implementacoes dos contratos prometidos  nas dependencias principalmente do casoDeUso. ex: casodeuso recebe a instancia da implementacao do que ele usou como dependencia ex: repositorio escolhido
+( estrutura : variaveis, devolve objeto )
 
 6. Test : pasta: /UseCases/AcaoEntidadeTest
 - Missao: testar o CasoDeUso por meio do Index_Factory que instanciou e cumpriu todos contratos.
 
 7. Controller : pasta /UseCases/AcaoEntidadeController
   - missao: vai deleagr ao CasoDeUso os dados vindo do Servidor
+( estrutura : classe implementadora, devolve objeto )
