@@ -13,3 +13,5 @@ const Important_Example1Repository = memoryExample1Repository
 const createExample1Usecase = new CreateExample1UseCase(Important_Example1Repository)
 
 export { createExample1Usecase }
+
+// todo: fazer função que recebe o repoEmUso e testar essa função como sut da funcionalidade.
