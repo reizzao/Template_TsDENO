@@ -1,10 +1,17 @@
 // deno-lint-ignore-file no-explicit-any no-unused-vars
 
 import { expect } from "@deps";
-import { createExample1Usecase } from "./index.ts";
+import { createExample1UseCaseFactory, example1RepositoriesOptions } from "./index.ts";
 import type { ICreateExample1RequestDTO } from "./CreateExample1DTO.ts";
+import { IExample1 } from "../../Model/Example1.ts";
+import { CreateExample1UseCase } from "./CreateExample1UseCases.ts";
 
-const sut = createExample1Usecase;
+const repoInuse = example1RepositoriesOptions.memory
+const sut: CreateExample1UseCase = createExample1UseCaseFactory(repoInuse);
+
+function cleanRepo() {
+  repoInuse.collection = []
+}
 
 const fakeCreateExample1DTO: ICreateExample1RequestDTO = {
   Nome: "fakeNomeUm",
@@ -12,15 +19,20 @@ const fakeCreateExample1DTO: ICreateExample1RequestDTO = {
   Email: "fakeemailUm@email.com",
 }
 
+const seedCreateExample101Tested: IExample1 = await sut.execute(fakeCreateExample1DTO)
 
 Deno.test({
   name: "[ Main ] deve retornar a Entidade igual o fake passado com a propriedade ID.",
   only: false,
   async fn() {
+
+    cleanRepo()
+
     const expected = {
       ID: "todo: makeID() - chamar aqui",
       Props: fakeCreateExample1DTO,
     }
+
     const tested = await sut.execute(fakeCreateExample1DTO)
     console.log(tested)
 
@@ -29,4 +41,4 @@ Deno.test({
 });
 
 
-export default 1;
+export { seedCreateExample101Tested }

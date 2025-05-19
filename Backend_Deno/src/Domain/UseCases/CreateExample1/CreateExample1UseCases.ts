@@ -1,8 +1,9 @@
+import type { ICreateUseCase } from './../../../Global/types.entities.generics.ts';
 import { Example1 } from "../../Model/Example1.ts";
 import { IExample1Repository } from "../../Repositories/IExample1Repository.ts";
 import type { ICreateExample1RequestDTO } from "./CreateExample1DTO.ts";
 
-class CreateExample1UseCase {
+class CreateExample1UseCase implements ICreateUseCase<Example1, ICreateExample1RequestDTO>{
   constructor(private readonly example1Repository: IExample1Repository) { }
 
   async execute(dto: ICreateExample1RequestDTO) {

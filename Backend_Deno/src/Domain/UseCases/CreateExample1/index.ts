@@ -1,17 +1,15 @@
+import { RepositoriesOptions } from "../../../Global/types.entities.generics.ts";
+import { IExample1Repository } from "../../Repositories/IExample1Repository.ts";
 import { MemoryExample1Repository } from "../../Repositories/Implementations/MemoryExample1Repository.ts";
 import { CreateExample1UseCase } from "./CreateExample1UseCases.ts";
 
-// Instanciando Repositorios
-const memoryExample1Repository = new MemoryExample1Repository()
+const example1RepositoriesOptions: RepositoriesOptions<IExample1Repository> = {
+  json: new MemoryExample1Repository(), // todo: temporario
+  memory: new MemoryExample1Repository(),
+}
 
-// Important : Repositorio InUse - definir aqui
+const createExample1UseCaseFactory = (repo: IExample1Repository) => {
+  return new CreateExample1UseCase(repo)
+}
 
-const Important_Example1Repository = memoryExample1Repository
-
-// Use important Repository
-
-const createExample1Usecase = new CreateExample1UseCase(Important_Example1Repository)
-
-export { createExample1Usecase }
-
-// todo: fazer função que recebe o repoEmUso e testar essa função como sut da funcionalidade.
+export { createExample1UseCaseFactory, example1RepositoriesOptions }
