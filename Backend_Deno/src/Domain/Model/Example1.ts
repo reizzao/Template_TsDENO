@@ -1,4 +1,4 @@
-import type { ICreateExample1RequestDTO } from "../UseCases/CreateExample1/CreateExample1DTO.ts";
+import { ICreateExample1RequestDTO } from "../UseCases/Example1/CreateExample1/dto.ts";
 
 interface IExample1 {
   ID: string

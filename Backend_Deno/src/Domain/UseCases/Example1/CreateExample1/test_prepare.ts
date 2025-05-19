@@ -2,9 +2,9 @@
 
 import { expect } from "@deps";
 import { createExample1UseCaseFactory, example1RepositoriesOptions } from "./index.ts";
-import type { ICreateExample1RequestDTO } from "./CreateExample1DTO.ts";
-import { IExample1 } from "../../Model/Example1.ts";
-import { CreateExample1UseCase } from "./CreateExample1UseCases.ts";
+import type { ICreateExample1RequestDTO } from "./dto.ts";
+import { IExample1 } from "../../../Model/Example1.ts";
+import { CreateExample1UseCase } from "./prepare.ts";
 
 const repoInuse = example1RepositoriesOptions.memory
 const sut: CreateExample1UseCase = createExample1UseCaseFactory(repoInuse);

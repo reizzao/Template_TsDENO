@@ -1,7 +1,7 @@
-import { RepositoriesOptions } from "../../../Global/types.entities.generics.ts";
-import { IExample1Repository } from "../../Repositories/IExample1Repository.ts";
-import { MemoryExample1Repository } from "../../Repositories/Implementations/MemoryExample1Repository.ts";
-import { CreateExample1UseCase } from "./CreateExample1UseCases.ts";
+import { RepositoriesOptions } from "../../../../Global/types.entities.generics.ts";
+import { IExample1Repository } from "../../../Repositories/Example1/IExample1Repository.ts";
+import { MemoryExample1Repository } from "../../../Repositories/Example1/Implementations/MemoryExample1Repository.ts";
+import { CreateExample1UseCase } from "./prepare.ts";
 
 const example1RepositoriesOptions: RepositoriesOptions<IExample1Repository> = {
   json: new MemoryExample1Repository(), // todo: temporario

@@ -1,4 +1,4 @@
-import { Example1 } from "../Model/Example1.ts";
+import { Example1 } from "../../Model/Example1.ts";
 
 interface IExample1Repository {
   collection: Example1[]

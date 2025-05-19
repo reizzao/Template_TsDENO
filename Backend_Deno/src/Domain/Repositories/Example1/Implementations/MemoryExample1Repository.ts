@@ -1,4 +1,4 @@
-import { Example1 } from "../../Model/Example1.ts";
+import { Example1 } from "../../../Model/Example1.ts";
 import { IExample1Repository } from "../IExample1Repository.ts";
 
 
