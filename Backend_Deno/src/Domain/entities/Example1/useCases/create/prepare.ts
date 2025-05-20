@@ -1,7 +1,6 @@
-import type { ICreateUseCase } from '../../../../Global/types.entities.generics.ts';
-import { Example1 } from "../../../Model/Example1.ts";
-import { IExample1Repository } from "../../../Repositories/Example1/IExample1Repository.ts";
-import type { ICreateExample1RequestDTO } from "./dto.ts";
+import  {Example1, ICreateExample1RequestDTO, IExample1Repository } from "@example1";
+
+import { ICreateUseCase} from "@global_types"
 
 class CreateExample1UseCase implements ICreateUseCase<Example1, ICreateExample1RequestDTO>{
   constructor(private readonly example1Repository: IExample1Repository) { }

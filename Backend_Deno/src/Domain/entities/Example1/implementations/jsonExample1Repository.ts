@@ -1,8 +1,8 @@
-import { Example1 } from "../../../Model/Example1.ts";
-import { IExample1Repository } from "../IExample1Repository.ts";
+import { Example1, IExample1Repository } from "@example1";
 
+// todo: implementar em json - temporariamente esta em memory
 
-class MemoryExample1Repository implements IExample1Repository {
+class JsonExample1Repository implements IExample1Repository {
   public readonly collection: Example1[] = []
 
   async findByEmail(Email: string): Promise<Example1> {
@@ -17,4 +17,4 @@ class MemoryExample1Repository implements IExample1Repository {
 
 }
 
-export { MemoryExample1Repository }
+export { JsonExample1Repository }

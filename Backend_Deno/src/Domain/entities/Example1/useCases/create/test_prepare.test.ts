@@ -1,10 +1,7 @@
 // deno-lint-ignore-file no-explicit-any no-unused-vars
 
 import { expect } from "@deps";
-import { createExample1UseCaseFactory, example1RepositoriesOptions } from "./index.ts";
-import type { ICreateExample1RequestDTO } from "./dto.ts";
-import { IExample1 } from "../../../Model/Example1.ts";
-import { CreateExample1UseCase } from "./prepare.ts";
+import { createExample1UseCaseFactory, example1RepositoriesOptions, IExample1, CreateExample1UseCase, ICreateExample1RequestDTO } from "@example1";
 
 const repoInuse = example1RepositoriesOptions.memory
 const sut: CreateExample1UseCase = createExample1UseCaseFactory(repoInuse);

@@ -1,7 +1,7 @@
 // deno-lint-ignore-file no-explicit-any no-unused-vars
 
 import { expect } from "@deps";
-import { Main } from "./Main.ts";
+import { Main } from "./main.ts";
 
 const sut = Main;
 

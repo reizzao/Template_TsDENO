@@ -1,6 +1,8 @@
 {
   "imports": {
     "@/": "./",
-    "@deps": "./src/Global/deps.ts"
+    "@deps": "./src/Global/deps.ts",
+    "@global_types": "./src/Global/types/exports.ts",
+    "@example1": "./src/Domain/entities/Example1/exports.ts"
   }
 }
