@@ -1,6 +1,6 @@
 import { ICreateExample1RequestDTO } from "@example1";
 
-interface IExample1 {
+interface IExample1Model {
   ID: string
   Props: ICreateExample1RequestDTO
 }
@@ -18,4 +18,4 @@ class Example1 {
 }
 
 export { Example1 }
-export type { IExample1 }
+export type { IExample1Model as IExample1 }

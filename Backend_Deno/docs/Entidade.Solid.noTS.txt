@@ -33,3 +33,13 @@
 7. Controller : pasta /UseCases/AcaoEntidadeController
   - missao: vai deleagr ao CasoDeUso os dados vindo do Servidor
 ( estrutura : classe implementadora, devolve objeto )
+
+8 - seed: o seed é :: a implementacao da factory do usecase( recebendo o repoinuse) e executando o (fakeDTO)
+
+---
+# Evitar
+- no_arquivo_de_test: [
+  - nao exporte nada para reuso do que vier do arquivo de test.
+  - use o export default 1 para :: Nao_escapar_variaveis_do_Arquivo
+]
+

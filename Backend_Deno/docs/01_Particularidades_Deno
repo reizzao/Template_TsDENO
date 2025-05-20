@@ -14,3 +14,5 @@
   observacoes: para a importacao do import_map.json funcionar somente aqui posso ter a chave imports:{} e nao posso te-la também no deno .json, e pra eexecutar esse aquivo uso o modo com recurso que tem a flag: --import-map import_map.json
 
   Executar_de_arquivo_configuracao: deno task <chave desejada>, exemplo: deno task run
+  
+  Nao_escapar_variaveis_do_Arquivo: use export default 1 no final do arquivo.

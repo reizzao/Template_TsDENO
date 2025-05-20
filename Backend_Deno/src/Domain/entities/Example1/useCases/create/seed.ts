@@ -1,7 +1,11 @@
-// import { example1RepositoriesOptions, createExample1UseCaseFactory, fakeCreateExample1DTO, IExample1 } from "@example1";
+import { example1RepositoriesOptions, fakeCreateExample1DTO, createExample1UseCaseFactory, IExample1, IExample1Repository } from "@example1";
 
-// const input = await createExample1UseCaseFactory(example1RepositoriesOptions.memory)
+type ISeddCreateExample1 = IExample1
 
-// const seedCreateExample101 = async (): Promise<IExample1> => await input.execute(fakeCreateExample1DTO)
+const repoinuse: IExample1Repository = example1RepositoriesOptions.memory
 
-// export { seedCreateExample101 }
+const seedCreateExample101: ISeddCreateExample1 = await createExample1UseCaseFactory(repoinuse).execute(fakeCreateExample1DTO)
+
+
+export { seedCreateExample101 }
+export type { ISeddCreateExample1 }
