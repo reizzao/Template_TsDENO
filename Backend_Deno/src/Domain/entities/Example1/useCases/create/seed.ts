@@ -1,9 +1,7 @@
-// import { IExample1, example1RepositoriesOptions, createExample1UseCaseFactory, fakeCreateExample1DTO, CreateExample1UseCase } from "@example1";
+// import { example1RepositoriesOptions, createExample1UseCaseFactory, fakeCreateExample1DTO, IExample1 } from "@example1";
 
-// const repoInuse = example1RepositoriesOptions.memory
+// const input = await createExample1UseCaseFactory(example1RepositoriesOptions.memory)
 
-// const repo = createExample1UseCaseFactory(repoInuse)
-
-// const seedCreateExample101: IExample1 = await repo.execute(fakeCreateExample1DTO)
+// const seedCreateExample101 = async (): Promise<IExample1> => await input.execute(fakeCreateExample1DTO)
 
 // export { seedCreateExample101 }

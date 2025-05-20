@@ -1,7 +1,7 @@
 // deno-lint-ignore-file no-explicit-any no-unused-vars
 
 import { expect } from "@deps";
-import { createExample1UseCaseFactory, example1RepositoriesOptions, IExample1, CreateExample1UseCase, ICreateExample1RequestDTO, fakeCreateExample1DTO } from "@example1";
+import { createExample1UseCaseFactory, example1RepositoriesOptions, CreateExample1UseCase, fakeCreateExample1DTO } from "@example1";
 
 const repoInuse = example1RepositoriesOptions.memory
 const sut: CreateExample1UseCase = createExample1UseCaseFactory(repoInuse);
