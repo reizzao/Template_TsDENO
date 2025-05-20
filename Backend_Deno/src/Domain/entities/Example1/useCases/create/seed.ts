@@ -1,6 +1,9 @@
-import { IExample1, seedCreateExample101Tested } from "@example1";
+// import { IExample1, example1RepositoriesOptions, createExample1UseCaseFactory, fakeCreateExample1DTO, CreateExample1UseCase } from "@example1";
 
+// const repoInuse = example1RepositoriesOptions.memory
 
-const seedCreateExample101: IExample1 = await seedCreateExample101Tested
+// const repo = createExample1UseCaseFactory(repoInuse)
 
-export { seedCreateExample101 }
+// const seedCreateExample101: IExample1 = await repo.execute(fakeCreateExample1DTO)
+
+// export { seedCreateExample101 }
