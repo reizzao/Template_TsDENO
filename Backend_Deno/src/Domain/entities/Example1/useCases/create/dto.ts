@@ -1,9 +1,9 @@
 
 
-interface ICreateExample1RequestDTO {
+interface IRequestCreateExample1DTO {
   Nome: string
   Sobrenome: string
   Email: string
 }
 
-export type { ICreateExample1RequestDTO }
+export type { IRequestCreateExample1DTO }

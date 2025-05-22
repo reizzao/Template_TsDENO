@@ -5,7 +5,7 @@ class MemoryExample1Repository implements IExample1Repository {
   public readonly collection: Example1[] = []
 
   async findByEmail(Email: string): Promise<Example1> {
-    const example1 = await this.collection?.find(example1 => example1.Props.Email === Email)!
+    const example1 = await this.collection?.find(example1 => example1.Request.Email === Email)!
     return await example1
   }
 

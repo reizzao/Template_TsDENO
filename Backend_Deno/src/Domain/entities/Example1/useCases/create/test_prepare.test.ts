@@ -26,9 +26,9 @@ Deno.test({
 
     expect(await tested).toEqual(expected);
     expect(await tested).toHaveProperty("ID");
-    expect(await tested.Props).toHaveProperty("Nome");
-    expect(await tested.Props).toHaveProperty("Email");
-    expect(await tested.Props.Email).toBe(expected.Props.Email);
+    expect(await tested.Request).toHaveProperty("Nome");
+    expect(await tested.Request).toHaveProperty("Email");
+    expect(await tested.Request.Email).toBe(expected.Request.Email);
   },
 });
 

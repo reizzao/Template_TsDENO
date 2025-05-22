@@ -1,6 +1,6 @@
-import { ICreateExample1RequestDTO } from "@example1";
+import { IRequestCreateExample1DTO } from "@example1";
 
-const fakeCreateExample1DTO: ICreateExample1RequestDTO = {
+const fakeCreateExample1DTO: IRequestCreateExample1DTO = {
   Nome: "fakeNomeUm",
   Sobrenome: "fakeSobrenomeUm",
   Email: "fakeemailUm@email.com",

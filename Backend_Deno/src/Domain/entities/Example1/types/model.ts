@@ -1,14 +1,14 @@
-import { ICreateExample1RequestDTO } from "@example1";
+import { IRequestCreateExample1DTO } from "@example1";
 
 interface IExample1Model {
   ID: string
-  Props: ICreateExample1RequestDTO
+  Request: IRequestCreateExample1DTO
 }
 
 class Example1 {
   public readonly ID: string
 
-  constructor(public readonly Props: ICreateExample1RequestDTO, ID?: string) {
+  constructor(public readonly Request: IRequestCreateExample1DTO, ID?: string) {
     // Object.assign(this, Props)
 
     // OBS: preencher campos que nao virao do request aqui :
@@ -18,4 +18,4 @@ class Example1 {
 }
 
 export { Example1 }
-export type { IExample1Model as IExample1 }
+export type { IExample1Model }

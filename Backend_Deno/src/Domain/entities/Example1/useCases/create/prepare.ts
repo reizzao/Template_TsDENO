@@ -1,11 +1,11 @@
-import  {Example1, ICreateExample1RequestDTO, IExample1Repository } from "@example1";
+import { Example1, IRequestCreateExample1DTO, IExample1Repository } from "@example1";
 
-import { ICreateUseCase} from "@global_types"
+import { ICreateUseCase } from "@global_types"
 
-class CreateExample1UseCase implements ICreateUseCase<Example1, ICreateExample1RequestDTO>{
+class CreateExample1UseCase implements ICreateUseCase<Example1, IRequestCreateExample1DTO> {
   constructor(private readonly example1Repository: IExample1Repository) { }
 
-  async execute(dto: ICreateExample1RequestDTO) {
+  async execute(dto: IRequestCreateExample1DTO) {
     const example1AlreadyExists = await this.example1Repository.findByEmail(dto.Email)
 
     if (example1AlreadyExists) {
