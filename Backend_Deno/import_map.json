@@ -3,6 +3,7 @@
     "@/": "./",
     "@deps": "./src/Global/deps.ts",
     "@global_types": "./src/Global/types/exports.ts",
+    "@helpers": "./src/Global/helpers/exports.ts",
     "@example1": "./src/Domain/entities/Example1/exports.ts"
   }
 }

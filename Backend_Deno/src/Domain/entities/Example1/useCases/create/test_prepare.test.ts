@@ -3,9 +3,9 @@
 import { expect } from "@deps";
 import { CreateExample1UseCaseFactory, Example1RepositoriesOptionsInuse, fakeCreateExample1DTO, seedCreateExample101, IExample1Repository, Example1, ISeddCreateExample1 } from "@example1";
 
-const repoInuse: IExample1Repository = new Example1RepositoriesOptionsInuse().memory()
+const repoInuse: IExample1Repository = Example1RepositoriesOptionsInuse.memory()
 const sut = await new CreateExample1UseCaseFactory().execute(repoInuse);
-const seed: ISeddCreateExample1 = seedCreateExample101
+const seed: ISeddCreateExample1 = await seedCreateExample101
 
 function cleanRepo() {
   repoInuse.collection = []
