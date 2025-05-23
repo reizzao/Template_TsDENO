@@ -1,10 +1,12 @@
-import { example1RepositoriesOptions, fakeCreateExample1DTO, createExample1UseCaseFactory, IExample1Model, IExample1Repository } from "@example1";
+import { Example1RepositoriesOptionsInuse, fakeCreateExample1DTO, PrepareCreateExample1UseCase, IExample1Model, IExample1Repository } from "@example1";
 
 type ISeddCreateExample1 = IExample1Model
 
-const repoinuse: IExample1Repository = example1RepositoriesOptions.memory
+const repoinuseByExample1Seed: IExample1Repository = new Example1RepositoriesOptionsInuse().memory()
 
-const seedCreateExample101: ISeddCreateExample1 = await createExample1UseCaseFactory(repoinuse).execute(fakeCreateExample1DTO)
+// todo: implementar um createSeed
+
+const seedCreateExample101 = await new PrepareCreateExample1UseCase(repoinuseByExample1Seed).execute(fakeCreateExample1DTO)
 
 
 export { seedCreateExample101 }

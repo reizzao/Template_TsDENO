@@ -1,5 +1,5 @@
 
-export interface ICreateUseCase<T, D> {
+export interface IPrepareCreateUseCase<T, D> {
   execute: (dto: D) => Promise<T>
 }
 

@@ -1,8 +1,8 @@
 import { Example1, IRequestCreateExample1DTO, IExample1Repository } from "@example1";
 
-import { ICreateUseCase } from "@global_types"
+import { IPrepareCreateUseCase } from "@global_types"
 
-class CreateExample1UseCase implements ICreateUseCase<Example1, IRequestCreateExample1DTO> {
+class PrepareCreateExample1UseCase implements IPrepareCreateUseCase<Example1, IRequestCreateExample1DTO> {
   constructor(private readonly example1Repository: IExample1Repository) { }
 
   async execute(dto: IRequestCreateExample1DTO) {
@@ -20,4 +20,4 @@ class CreateExample1UseCase implements ICreateUseCase<Example1, IRequestCreateEx
   }
 }
 
-export { CreateExample1UseCase }
+export { PrepareCreateExample1UseCase }

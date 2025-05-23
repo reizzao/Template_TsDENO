@@ -1,10 +1,10 @@
 // deno-lint-ignore-file no-explicit-any no-unused-vars
 
 import { expect } from "@deps";
-import { createExample1UseCaseFactory, example1RepositoriesOptions, CreateExample1UseCase, fakeCreateExample1DTO, seedCreateExample101, IExample1Repository, Example1, ISeddCreateExample1 } from "@example1";
+import { CreateExample1UseCaseFactory, Example1RepositoriesOptionsInuse, fakeCreateExample1DTO, seedCreateExample101, IExample1Repository, Example1, ISeddCreateExample1 } from "@example1";
 
-const repoInuse: IExample1Repository = example1RepositoriesOptions.memory
-const sut: CreateExample1UseCase = createExample1UseCaseFactory(repoInuse);
+const repoInuse: IExample1Repository = new Example1RepositoriesOptionsInuse().memory()
+const sut = await new CreateExample1UseCaseFactory().execute(repoInuse);
 const seed: ISeddCreateExample1 = seedCreateExample101
 
 function cleanRepo() {
